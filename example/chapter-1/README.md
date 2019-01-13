@@ -7,7 +7,7 @@
 ```bash
 mkdir -p ~/rust-learn/chapter-1/example/hello_world
 
-cd ~/rust-learn//chapter-1/example/hello_world
+cd ~/rust-learn/chapter-1/example/hello_world
 
 # create file
 touch main.rs
