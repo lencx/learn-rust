@@ -1,0 +1,7 @@
+[package]
+name = "storing_lists_of_values_with_vectors"
+version = "0.1.0"
+authors = ["Len <cxin1314@gmail.com>"]
+edition = "2018"
+
+[dependencies]
