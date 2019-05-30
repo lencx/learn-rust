@@ -2,6 +2,11 @@
 use std::collections::HashMap;
 use std::fmt;
 use std::io::Result as IoResult;
+use rand::Rng;
+
+// use std::{cmp::Ordering, io};
+// use std::{self, Write};
+// use std::collections::*;
 
 fn main() {
   let mut map = HashMap::new();
@@ -12,6 +17,9 @@ fn main() {
   let t1 = Triangle { a: 20.0, b: 30.0, c: 50.0 };
 
   println!("t1: {}", t1);
+
+  let num = rand::thread_rng().gen_range(1, 200);
+  println!("num: {}", num);
 }
 
 #[derive(Debug)]
