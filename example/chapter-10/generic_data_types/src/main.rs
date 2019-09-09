@@ -18,6 +18,8 @@ fn main() {
     println!("intPoint: {:?}, floatPoint: {:?}", intPoint, floatPoint);
     println!("distance_from_origin:{:?}", floatPoint.distance_from_origin());
     println!("mix: p3.x = {}; p3.y = {}", p3.x, p3.y);
+
+    using_generics();
 }
 
 
@@ -80,4 +82,17 @@ impl<T, U> Point2<T, U> {
             y: other.y,
         }
     }
+}
+
+fn using_generics() {
+    let integer = Some(5);
+    let float = Some(4.5);
+    let a = Option_i32::Some(20);
+    println!("integer: {:?}; float: {:?}; a: {:?}", integer, float, a);
+}
+
+#[derive(Debug)]
+enum Option_i32 {
+    Some(i32),
+    None,
 }
