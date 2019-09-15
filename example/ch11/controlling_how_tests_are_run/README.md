@@ -1,38 +1,8 @@
-# Rust Learn
-
-## Start
-
-### Install
+# Controlling how tests are run
 
 ```bash
-# installing `rustup` on Linux or macOS
-curl https://sh.rustup.rs -sSf | sh
-
-export PATH="$HOME/.cargo/bin:$PATH"
-```
-
-### Updating & Uninstalling
-
-```bash
-rustup update
-
-rustup self uninstall
-```
-
-### Troubleshooting
-
-```bash
-rustc
-
-rustup
-
-cargo
-cargo new
-cargo check
-cargo run
-cargo build [--release]
-cargo doc --open
-cargo test
+# #[test]
+# #[ignore]
 
 # If you don’t want to run the tests in parallel
 # or if you want more fine-grained control over the number of threads used
@@ -49,10 +19,4 @@ cargo test <fn_part_name>
 
 # run only the ignored tests
 cargo test -- --ignored
-```
-
-### Local Documentation
-
-```bash
-rustup doc
 ```
