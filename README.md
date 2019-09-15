@@ -32,6 +32,7 @@ cargo check
 cargo run
 cargo build [--release]
 cargo doc --open
+cargo test
 ```
 
 ### Local Documentation
