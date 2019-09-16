@@ -49,6 +49,9 @@ cargo test <fn_part_name>
 
 # run only the ignored tests
 cargo test -- --ignored
+
+# to run all the tests in a particular integration test file
+cargo test --test <filename>
 ```
 
 ### Local Documentation
