@@ -59,7 +59,7 @@ rustup doc
 
 ## Attributes
 
-```rs
+```rust
 /** syntax */
 // InnerAttribute:
 #![Attr]
@@ -68,10 +68,10 @@ rustup doc
 #[Attr]
 ```
 
-<table style="font-size: 14px">
+<table>
 <thead>
   <tr>
-    <th style="color: #999">Built-in attributes</th>
+    <th>Built-in attributes</th>
     <th>attribute</th>
     <th>description</th>
   </tr>
@@ -282,7 +282,7 @@ rustup doc
 </tbody>
 </table>
 
-```rs
+```rust
 /** Diagnostics */
 // overrides the check for C so that violations will go unreported
 #[allow(C)]
