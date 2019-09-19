@@ -24,14 +24,14 @@ impl Config {
 pub fn run(conf: Config) -> Result<(), Box<dyn Error>> {
 	let contents = fs::read_to_string(conf.filename)?;
 
-	println!("with text:\n{}", contents);
+	// println!("with text:\n{}", contents);
 
   // for line in search(&conf.query, &contents)
   // println!("**************************");
   // println!("{:#?}", search(&conf.query, &contents));
 
-  println!("**************************");
-  println!("[Searching ...]\n");
+  // println!("**************************");
+  // println!("[Searching ...]\n");
 
   let result = if conf.case_sensitive {
     search(&conf.query, &contents)

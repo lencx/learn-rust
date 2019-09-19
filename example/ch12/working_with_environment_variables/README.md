@@ -18,4 +18,10 @@ cargo run body poem.txt
 # 0: How dreary to be somebody!
 # 1: How public, like a forg
 CASE_INSENSITIVE=1 cargo run how poem.txt
+
+cargo run to poem.txt > output.txt
+
+# print: Problem parsing arguments: not enough arguments
+# that don’t cause an error but still redirect standard output to a filethat don’t cause an error but still redirect standard output to a file
+cargo run > output.txt
 ```
