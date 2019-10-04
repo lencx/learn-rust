@@ -10,4 +10,7 @@ cd target/release
 CASE_INSENSITIVE=1 ./minigrep
 
 ./minigrep <query> <filename> [> <output_filename>]
+
+# example
+CASE_INSENSITIVE=1 cargo run Let poem.txt
 ```
