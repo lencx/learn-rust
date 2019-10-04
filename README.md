@@ -60,6 +60,43 @@ cargo test --test <filename>
 rustup doc
 ```
 
+## Data Types
+
+* Integer Types
+
+  | Length  | Signed | Unsigned |
+  | ------- | ------ | -------- |
+  | 8-bit   | i8     | u8       |
+  | 16-bit  | i16    | u16      |
+  | 32-bit  | i32    | u32      |
+  | 64-bit  | i64    | u64      |
+  | 128-bit | i128   | u128     |
+  | arch    | isize  | usize    |
+
+  * signed: **-2<sup>n-1</sup> ～ 2<sup>n-1</sup>-1**
+  * unsigned: **0 ～ 2<sup>n</sup>-1**
+  * `isize` & `usize`: 64 bits *(64-bit architecture)*, 32 bits *(32-bit architecture)*
+
+* Floating-Point Types
+
+> `f32`, `f64`(default): The `f32` type is a single-precision float, and `f64` has double precision.
+
+* The Boolean Type: `bool`
+
+* The Character Type: `char`
+
+* Compound Types:
+
+  * The Tuple Type: `tuple`
+
+   > `tuple`: A finite heterogeneous sequence, (T, U, ..).
+
+  * The Array Type: `array` `slice`
+
+   > `array`: A fixed-size array, denoted `[T; N]`, for the element type, `T`, and the non-negative compile-time    constant size, `N`.
+
+   > `slice`: A dynamically-sized view into a contiguous sequence, `[T]`.
+
 ## Attributes
 
 ```rust
