@@ -60,6 +60,29 @@ cargo login <API_TOKEN>
 cargo publish
 # `--undo`: By adding `--undo` to the command, you can also undo a yank and allow projects to start depending on a version again
 cargo yank --vers <version> [--undo]
+
+cargo install <binary_crate>
+```
+
+> [Cargo.toml](https://doc.rust-lang.org/cargo/reference/manifest.html)
+
+```toml
+[package]
+name = "pack_name" # the name of the package
+version = "pack_version" # the current version, obeying semver
+authors = ["name <email@example.com>"]
+edition = "2018"
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
+
+[dependencies]
+
+[workspace]
+members = ["..."]
 ```
 
 ### Local Documentation
