@@ -53,6 +53,9 @@ cargo test -- --ignored
 # to run all the tests in a particular integration test file
 cargo test --test <filename>
 
+# run tests for one particular crate in a workspace from the top-level directory
+cargo test -p <crate_name>
+
 cargo login <API_TOKEN>
 cargo publish
 # `--undo`: By adding `--undo` to the command, you can also undo a yank and allow projects to start depending on a version again
