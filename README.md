@@ -31,7 +31,7 @@ cargo new
 cargo check
 cargo run
 cargo build [--release]
-cargo doc --open
+cargo doc [--open]
 cargo test
 
 # If you don’t want to run the tests in parallel
@@ -52,6 +52,11 @@ cargo test -- --ignored
 
 # to run all the tests in a particular integration test file
 cargo test --test <filename>
+
+cargo login <API_TOKEN>
+cargo publish
+# `--undo`: By adding `--undo` to the command, you can also undo a yank and allow projects to start depending on a version again
+cargo yank --vers <version> [--undo]
 ```
 
 ### Local Documentation
@@ -96,6 +101,19 @@ rustup doc
    > `array`: A fixed-size array, denoted `[T; N]`, for the element type, `T`, and the non-negative compile-time    constant size, `N`.
 
    > `slice`: A dynamically-sized view into a contiguous sequence, `[T]`.
+
+## Documentation
+
+> Documentation comments within items are useful for describing crates and modules especially. Use them to explain the overall purpose of the container to help your users understand the crate’s organization.
+
+* `///`: documentation comments, support Markdown notation for formatting the text.
+* `//!`: adds documentation to the item that contains the comments rather than adding documentation to the items following the comments.
+
+> **Commonly Used Sections**
+
+* `Panics`: The scenarios in which the function being documented could panic. Callers of the function who don’t want their programs to panic should make sure they don’t call the function in these situations.
+* `Errors`: If the function returns a `Result`, describing the kinds of errors that might occur and what conditions might cause those errors to be returned can be helpful to callers so they can write code to handle the different kinds of errors in different ways.
+* `Safety`: If the function is `unsafe` to call, there should be a section explaining why the function is unsafe and covering the invariants that the function expects callers to uphold.
 
 ## Attributes
 
